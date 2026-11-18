@@ -19,8 +19,17 @@
 - Diálogo natural, falado como gente de verdade: frases curtas, interrupções, gírias leves, piada.
 - O narrador só costura; quem conta a história são os personagens.
 - Sem moral explicada no final; o final mostra.
-- Fecha com um gancho para o próximo episódio.
 - Alvo: 140–160 palavras faladas para 60 s.
+
+## Final fixo: "Amanhã quem escolhe é você" (últimos ~9 s de TODO episódio)
+
+- O Caian olha direto para a câmera e fala com o público, como um amigo.
+- Ele dá **duas opções** para o episódio de amanhã, sempre ligadas à história de hoje.
+- Na tela aparecem dois cartões grandes, **1** e **2**, cada um com um desenho e um título curto,
+  mais "COMENTA 1 OU 2" e o **@caianwaalacee**.
+- O episódio seguinte começa com o Caian agradecendo: "Vocês escolheram o 2, então bora!"
+  Isso mostra que a escolha do público valeu de verdade.
+- Fala modelo: "Ó, amanhã quem escolhe é você. Um: … Dois: … Comenta um ou dois aí!"
 
 ## Legendas
 

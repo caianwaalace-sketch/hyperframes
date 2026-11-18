@@ -26,6 +26,19 @@ rosto desenhado (olhos e boca) na frente da cabeça. Boca e olhos mudam para mos
 - **Jeito:** exibido, tem os itens mais caros e nenhum funciona quando precisa.
 - **Fala como:** "Kkkk, sério isso?", "Custou dez mil, tá?"
 
+## Tonhão — o amigo grandão e medroso
+
+- **Visual:** o maior boneco da turma (1,5× a altura do Caian), pele parda, regata vermelha,
+  bandana azul, cara de quem vai chorar.
+- **Jeito:** parece forte, morre de medo de tudo. Alívio cômico. Se esconde atrás da Lia.
+- **Fala como:** "Ai, ai, ai…", "Eu tô fora.", "Alguém mais ouviu isso?"
+
+## Seu Juca — dono da loja de ovos
+
+- **Visual:** velhinho de bigode branco em bloco, avental marrom, óculos na ponta do nariz.
+- **Jeito:** sabe mais do que conta. Sempre dá uma pista do próximo mistério.
+- **Fala como:** "Filho…", "Esse ovo aí tem história."
+
 ## Pedrita — o pet do Caian (a partir do Ep. 1)
 
 - **Visual:** uma pedra cinza em bloco com dois olhinhos. Pisca devagar.
@@ -43,3 +56,5 @@ rosto desenhado (olhos e boca) na frente da cabeça. Boca e olhos mudam para mos
 | Caian      | `pm_alex` (tom mais agudo/rápido) | alguém jovem gravando |
 | Lia        | `pf_dora`                         | alguém gravando       |
 | Kaio       | `pm_alex` mais lento              | alguém gravando       |
+| Tonhão     | `pm_santa` mais lento e grave     | alguém gravando       |
+| Seu Juca   | `pm_santa` mais lento             | alguém gravando       |
