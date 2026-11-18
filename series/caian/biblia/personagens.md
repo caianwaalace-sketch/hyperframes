@@ -3,10 +3,12 @@
 Todos são bonecos de blocos: cabeça cúbica, tronco retangular, braços e pernas em blocos,
 rosto desenhado (olhos e boca) na frente da cabeça. Boca e olhos mudam para mostrar emoção.
 
-## Bento — protagonista (fixo em todo episódio)
+## Caian — protagonista (fixo em todo episódio)
 
-- **Visual:** pele morena clara, boné preto virado para trás, moletom laranja com um raio branco,
-  calça jeans azul-escura, tênis brancos. Sobrancelhas grossas (ajudam nas caretas).
+- **Visual:** pele morena clara, boné preto virado para trás, moletom laranja com **@caianwaalacee**
+  escrito em branco no peito (e nas costas), calça jeans azul-escura, tênis brancos. Sobrancelhas grossas
+  (ajudam nas caretas).
+- **Marca:** o @caianwaalacee aparece no moletom em todo episódio, sempre legível nos closes.
 - **Idade:** uns 11 anos.
 - **Jeito:** otimista, meio azarado, faz piada quando está nervoso. Fala rápido quando empolga.
 - **Fala como:** "Calma, calma, calma…", "Vai que dá, né?", "Ah, mano…".
@@ -15,8 +17,8 @@ rosto desenhado (olhos e boca) na frente da cabeça. Boca e olhos mudam para mos
 ## Lia — melhor amiga
 
 - **Visual:** pele negra, cabelo cacheado em bloco roxo, jaqueta verde-água, óculos redondos.
-- **Jeito:** a esperta e sincera; tira sarro do Bento, mas sempre ajuda.
-- **Fala como:** "Bento… não.", "Eu te avisei."
+- **Jeito:** a esperta e sincera; tira sarro do Caian, mas sempre ajuda.
+- **Fala como:** "Caian… não.", "Eu te avisei."
 
 ## Kaio — rival
 
@@ -24,10 +26,10 @@ rosto desenhado (olhos e boca) na frente da cabeça. Boca e olhos mudam para mos
 - **Jeito:** exibido, tem os itens mais caros e nenhum funciona quando precisa.
 - **Fala como:** "Kkkk, sério isso?", "Custou dez mil, tá?"
 
-## Pedrita — o pet do Bento (a partir do Ep. 1)
+## Pedrita — o pet do Caian (a partir do Ep. 1)
 
 - **Visual:** uma pedra cinza em bloco com dois olhinhos. Pisca devagar.
-- **Jeito:** não fala, não corre, só segue o Bento. Surpreende no momento certo.
+- **Jeito:** não fala, não corre, só segue o Caian. Surpreende no momento certo.
 
 ## Narrador
 
@@ -38,6 +40,6 @@ rosto desenhado (olhos e boca) na frente da cabeça. Boca e olhos mudam para mos
 | Personagem | Opção grátis local (Kokoro)       | Mais natural          |
 | ---------- | --------------------------------- | --------------------- |
 | Narrador   | `pm_santa`                        | sua voz               |
-| Bento      | `pm_alex` (tom mais agudo/rápido) | alguém jovem gravando |
+| Caian      | `pm_alex` (tom mais agudo/rápido) | alguém jovem gravando |
 | Lia        | `pf_dora`                         | alguém gravando       |
 | Kaio       | `pm_alex` mais lento              | alguém gravando       |

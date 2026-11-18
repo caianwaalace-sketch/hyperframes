@@ -1,7 +1,7 @@
-# Série "Bento" — animações em bloquinhos, 60 s, 9:16
+# Série "Caian" — animações em bloquinhos, 60 s, 9:16
 
 Histórias curtas em português, com narrador e diálogos, num mundo de bonecos de blocos
-(estilo jogo de construção/obby). Personagem fixo: **Bento**.
+(estilo jogo de construção/obby). Personagem fixo: **Caian**.
 
 > Estilo "bloquinho" inspirado em jogos de blocos, mas com personagens, nomes e visual próprios.
 > Não usamos logo, nome, marca nem personagens de nenhum jogo existente.
@@ -9,13 +9,13 @@ Histórias curtas em português, com narrador e diálogos, num mundo de bonecos 
 ## Pastas
 
 ```
-series/bento/
+series/caian/
 ├── README.md                 este arquivo
 ├── biblia/
 │   ├── personagens.md        quem é quem: aparência, cores, jeito de falar, voz
 │   └── estilo.md             regras visuais, de roteiro, de áudio e de formato
 ├── compartilhado/
-│   ├── personagens/          bonecos 3D reutilizáveis (Bento, Lia, Kaio, Pedrita…)
+│   ├── personagens/          bonecos 3D reutilizáveis (Caian, Lia, Kaio, Pedrita…)
 │   ├── sfx/                  efeitos sonoros gratuitos (com créditos)
 │   └── musica/               trilhas gratuitas (com licença anotada)
 ├── modelos/

@@ -25,7 +25,7 @@
 ## Legendas
 
 - Sempre ligadas (muita gente assiste sem som).
-- 2–4 palavras por vez, cor do personagem que fala (Bento laranja, Lia verde-água, Kaio dourado,
+- 2–4 palavras por vez, cor do personagem que fala (Caian laranja, Lia verde-água, Kaio dourado,
   narrador branco).
 
 ## Áudio
