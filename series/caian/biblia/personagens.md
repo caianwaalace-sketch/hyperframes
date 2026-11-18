@@ -5,11 +5,19 @@ rosto desenhado (olhos e boca) na frente da cabeça. Boca e olhos mudam para mos
 
 ## Caian — protagonista (fixo em todo episódio)
 
-- **Visual:** pele morena clara, boné preto virado para trás, moletom laranja com **@caianwaalacee**
-  escrito em branco no peito (e nas costas), calça jeans azul-escura, tênis brancos. Sobrancelhas grossas
-  (ajudam nas caretas).
-- **Marca:** o @caianwaalacee aparece no moletom em todo episódio, sempre legível nos closes.
-- **Idade:** uns 11 anos.
+- **Referência:** `compartilhado/personagens/referencias/caian-referencia.jpg` (avatar do criador).
+- **Visual:**
+  - Pele bege-clara (#E8C4A0). Cabelo castanho-escuro (#3B2A20) em mechas, jogado para o lado, com volume no topo.
+  - Rosto: olhos ovais pretos, sobrancelhas finas levemente arqueadas, sorriso largo de lado
+    mostrando os dentes, uma estrelinha branca brilhando na bochecha direita (a "marca" dele).
+  - Camiseta preta lisa de manga curta, com **@caianwaalacee** em branco no peito e nas costas.
+  - Corrente grossa dourada (#D4AF37) no pescoço e pulseira dourada no pulso esquerdo.
+  - Tatuagens escuras nos dois antebraços.
+  - Calça preta com uma corrente prateada pendurada no bolso esquerdo.
+  - Tênis pretos com sola e bico brancos.
+- **Marca:** o @caianwaalacee aparece na camiseta em todo episódio, sempre legível nos closes.
+  A estrelinha na bochecha brilha (pisca) quando ele tem uma ideia ou se dá bem.
+- **Idade:** jovem (uns 16–18 anos), estiloso, mas gente boa.
 - **Jeito:** otimista, meio azarado, faz piada quando está nervoso. Fala rápido quando empolga.
 - **Fala como:** "Calma, calma, calma…", "Vai que dá, né?", "Ah, mano…".
 - **Nunca:** é malvado, desiste de um amigo.
@@ -22,7 +30,7 @@ rosto desenhado (olhos e boca) na frente da cabeça. Boca e olhos mudam para mos
 
 ## Kaio — rival
 
-- **Visual:** pele clara, topete loiro em bloco, roupa toda dourada (porque comprou tudo).
+- **Visual:** pele clara, topete loiro em bloco, roupa toda branca com detalhes prateados e brilho (porque comprou tudo).
 - **Jeito:** exibido, tem os itens mais caros e nenhum funciona quando precisa.
 - **Fala como:** "Kkkk, sério isso?", "Custou dez mil, tá?"
 
