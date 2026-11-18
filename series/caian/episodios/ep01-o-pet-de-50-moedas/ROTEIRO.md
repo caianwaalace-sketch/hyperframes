@@ -5,7 +5,7 @@ zoa… até o Desafio da Lava.
 **Onde se passa:** loja de ovos do Seu Juca → pista do Desafio da Lava.
 **Personagens:** Narrador, Caian, Lia, Kaio, Tonhão, Seu Juca, Pedrita, o dragão do Kaio.
 **Duração:** 60 s.
-**Status:** rascunho para aprovação.
+**Status:** aprovado — protótipo animado com voz local (Kokoro).
 
 | Tempo | Quem     | Fala                                                                                                                                                | O que aparece                                                                                                                                                                   |
 | ----- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
