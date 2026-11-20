@@ -1,10 +1,10 @@
 # Personagem fixo "Téo" (SVG). Origem: pés em (0,0), altura ~860.
 OUT="#1a1410"
-def teo(p="teo", expr="neutro", glow=True, level=None, level_color="#D7263D", tag=True):
+def teo(p="teo", expr="neutro", glow=True, level=None, level_color="#D7263D", tag=True, power=False):
     EY = {
-     "neutro": '<ellipse cx="-34" cy="-700" rx="15" ry="17" fill="#fff" stroke="{o}" stroke-width="4"/><ellipse cx="34" cy="-700" rx="15" ry="17" fill="#fff" stroke="{o}" stroke-width="4"/><circle cx="-31" cy="-697" r="9" fill="#2E9BFF"/><circle cx="37" cy="-697" r="9" fill="#2E9BFF"/><circle cx="-31" cy="-697" r="4" fill="#0b1a2e"/><circle cx="37" cy="-697" r="4" fill="#0b1a2e"/><circle cx="-28" cy="-701" r="3" fill="#fff"/><circle cx="40" cy="-701" r="3" fill="#fff"/>',
-     "medo": '<ellipse cx="-34" cy="-702" rx="17" ry="21" fill="#fff" stroke="{o}" stroke-width="4"/><ellipse cx="34" cy="-702" rx="17" ry="21" fill="#fff" stroke="{o}" stroke-width="4"/><circle cx="-34" cy="-700" r="6" fill="#2E9BFF"/><circle cx="34" cy="-700" r="6" fill="#2E9BFF"/><circle cx="-34" cy="-700" r="2.5" fill="#0b1a2e"/><circle cx="34" cy="-700" r="2.5" fill="#0b1a2e"/>',
-     "decidido": '<path d="M-50 -704 Q-34 -712 -18 -704 L-18 -696 Q-34 -690 -50 -696 Z" fill="#fff" stroke="{o}" stroke-width="4"/><path d="M18 -704 Q34 -712 50 -704 L50 -696 Q34 -690 18 -696 Z" fill="#fff" stroke="{o}" stroke-width="4"/><circle cx="-32" cy="-700" r="7" fill="#2E9BFF"/><circle cx="36" cy="-700" r="7" fill="#2E9BFF"/><circle cx="-32" cy="-700" r="3" fill="#0b1a2e"/><circle cx="36" cy="-700" r="3" fill="#0b1a2e"/>',
+     "neutro": '<ellipse cx="-34" cy="-700" rx="15" ry="17" fill="#fff" stroke="{o}" stroke-width="4"/><ellipse cx="34" cy="-700" rx="15" ry="17" fill="#fff" stroke="{o}" stroke-width="4"/><circle cx="-31" cy="-697" r="9" fill="{iris}"/><circle cx="37" cy="-697" r="9" fill="{iris}"/><circle cx="-31" cy="-697" r="4" fill="{pupil}"/><circle cx="37" cy="-697" r="4" fill="{pupil}"/><circle cx="-28" cy="-701" r="3" fill="#fff"/><circle cx="40" cy="-701" r="3" fill="#fff"/>',
+     "medo": '<ellipse cx="-34" cy="-702" rx="17" ry="21" fill="#fff" stroke="{o}" stroke-width="4"/><ellipse cx="34" cy="-702" rx="17" ry="21" fill="#fff" stroke="{o}" stroke-width="4"/><circle cx="-34" cy="-700" r="6" fill="{iris}"/><circle cx="34" cy="-700" r="6" fill="{iris}"/><circle cx="-34" cy="-700" r="2.5" fill="{pupil}"/><circle cx="34" cy="-700" r="2.5" fill="{pupil}"/>',
+     "decidido": '<path d="M-50 -704 Q-34 -712 -18 -704 L-18 -696 Q-34 -690 -50 -696 Z" fill="#fff" stroke="{o}" stroke-width="4"/><path d="M18 -704 Q34 -712 50 -704 L50 -696 Q34 -690 18 -696 Z" fill="#fff" stroke="{o}" stroke-width="4"/><circle cx="-32" cy="-700" r="7" fill="{iris}"/><circle cx="36" cy="-700" r="7" fill="{iris}"/><circle cx="-32" cy="-700" r="3" fill="{pupil}"/><circle cx="36" cy="-700" r="3" fill="{pupil}"/>',
     }
     BR = {"neutro":'<path d="M-52 -728 Q-34 -738 -16 -730" /><path d="M16 -730 Q34 -738 52 -728" />',
              "medo":'<path d="M-52 -738 Q-36 -750 -18 -742" /><path d="M18 -742 Q36 -750 52 -738" />',
@@ -12,7 +12,13 @@ def teo(p="teo", expr="neutro", glow=True, level=None, level_color="#D7263D", ta
     MO = {"neutro":'<path d="M-14 -640 Q0 -634 14 -640" stroke="#3a1f12" stroke-width="5" fill="none" stroke-linecap="round"/>',
              "medo":'<ellipse cx="0" cy="-638" rx="12" ry="15" fill="#3a1f12"/>',
              "decidido":'<path d="M-16 -638 L16 -642" stroke="#3a1f12" stroke-width="5" fill="none" stroke-linecap="round"/>'}
-    faces = "".join(f'<g id="{p}-x-{k}" opacity="{1 if k == expr else 0}"><g id="{p}-eyes-{k}">{EY[k].replace("{o}", OUT)}</g><g stroke="#1c1410" stroke-width="7" fill="none" stroke-linecap="round">{BR[k]}</g>{MO[k]}</g>' for k in EY)
+    def eyes(k, iris, pupil):
+        return EY[k].replace("{o}", OUT).replace("{iris}", iris).replace("{pupil}", pupil)
+    # olhos castanhos normais; olhos azuis (poder) por cima, escondidos até o poder ativar
+    faces = "".join(
+        f'<g id="{p}-x-{k}" opacity="{1 if k == expr else 0}"><g id="{p}-eyes-{k}">{eyes(k, "#5a3519", "#1a0f08")}'
+        f'<g class="{p}-pw" opacity="{1 if power else 0}"><circle cx="-34" cy="-700" r="26" fill="#5CE1E6" opacity="0.45" filter="url(#blur18)"/><circle cx="34" cy="-700" r="26" fill="#5CE1E6" opacity="0.45" filter="url(#blur18)"/>{eyes(k, "#2E9BFF", "#0b1a2e")}</g></g>'
+        f'<g stroke="#1c1410" stroke-width="7" fill="none" stroke-linecap="round">{BR[k]}</g>{MO[k]}</g>' for k in EY)
     tagsvg = nametag(-1010 if level is not None else -920) if tag else ""
     lvl = (f'<g id="{p}-lvl"><rect x="-70" y="-930" width="140" height="84" rx="16" fill="#111318" stroke="{level_color}" stroke-width="5"/><text id="{p}-lvlt" x="0" y="-870" font-family="Oswald, Osw" font-weight="700" font-size="60" text-anchor="middle" fill="{level_color}">{level}</text></g>' if level is not None else "")
     curls = "".join(f'<circle cx="{x}" cy="{y}" r="{r}"/>' for x,y,r in [(-70,-760,30),(-40,-795,34),(0,-805,36),(40,-795,34),(72,-760,30),(-82,-725,22),(84,-725,22),(-20,-780,26),(22,-782,26)])
