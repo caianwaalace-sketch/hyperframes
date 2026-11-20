@@ -32,8 +32,6 @@ def teo(p="teo", expr="neutro", glow=True, level=None, level_color="#D7263D", ta
  <path d="M-96 -570 Q0 -606 96 -570 L82 -320 Q0 -300 -82 -320 Z" fill="#556B2F" stroke="{OUT}" stroke-width="5"/>
  <path d="M-96 -570 Q-70 -480 -82 -320 L-60 -322 Q-52 -470 -70 -560 Z" fill="#3f4f22" opacity="0.8"/>
  <path d="M0 -580 L0 -312" stroke="#2b3416" stroke-width="5"/>
- <rect x="-86" y="-462" width="172" height="38" rx="8" fill="#1c1410" stroke="#E8E4DA" stroke-width="2"/>
- <text x="0" y="-435" font-family="Oswald, Osw" font-weight="700" font-size="17" text-anchor="middle" fill="#E8E4DA">@amanha<tspan fill="#5CE1E6">voce</tspan><tspan fill="#D7263D">decide</tspan></text>
  <rect x="-66" y="-404" width="44" height="30" rx="6" fill="#4a5a28" stroke="{OUT}" stroke-width="4"/>
  <rect x="22" y="-404" width="44" height="30" rx="6" fill="#4a5a28" stroke="{OUT}" stroke-width="4"/>
  <path d="M-84 -336 L84 -336" stroke="#5b3a26" stroke-width="16"/><rect x="-14" y="-346" width="28" height="22" fill="#c9a227" stroke="{OUT}" stroke-width="3"/>
@@ -77,10 +75,6 @@ def teo_back(p="teob"):
  <g transform="translate(106 -336)"><path d="M-24 -22 Q-30 18 -6 26 Q22 30 26 6 L22 -26 Z" fill="#5CE1E6" stroke="{OUT}" stroke-width="4"/></g>
  <path d="M-96 -570 Q0 -606 96 -570 L82 -320 Q0 -300 -82 -320 Z" fill="#556B2F" stroke="{OUT}" stroke-width="5"/>
  <path d="M-84 -336 L84 -336" stroke="#5b3a26" stroke-width="16"/>
- <rect x="-80" y="-530" width="160" height="176" rx="10" fill="#1c1410" stroke="#E8E4DA" stroke-width="3"/>
- <text x="0" y="-484" font-family="Oswald, Osw" font-weight="700" font-size="33" text-anchor="middle" fill="#E8E4DA">@amanha</text>
- <text x="0" y="-436" font-family="Oswald, Osw" font-weight="700" font-size="40" text-anchor="middle" fill="#5CE1E6">voce</text>
- <text x="0" y="-388" font-family="Oswald, Osw" font-weight="700" font-size="40" text-anchor="middle" fill="#D7263D">decide</text>
  <path d="M-30 -610 L30 -610 L26 -568 L-26 -568 Z" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
  <path d="M-70 -600 Q0 -556 70 -600 L64 -560 Q0 -530 -64 -560 Z" fill="#D7263D" stroke="{OUT}" stroke-width="5"/>
  <ellipse cx="-80" cy="-690" rx="14" ry="20" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/><ellipse cx="80" cy="-690" rx="14" ry="20" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
