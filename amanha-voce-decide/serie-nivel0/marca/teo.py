@@ -29,8 +29,10 @@ def teo(p="teo", expr="neutro", glow=True):
  <path d="M-96 -570 Q0 -606 96 -570 L82 -320 Q0 -300 -82 -320 Z" fill="#556B2F" stroke="{OUT}" stroke-width="5"/>
  <path d="M-96 -570 Q-70 -480 -82 -320 L-60 -322 Q-52 -470 -70 -560 Z" fill="#3f4f22" opacity="0.8"/>
  <path d="M0 -580 L0 -312" stroke="#2b3416" stroke-width="5"/>
- <rect x="-66" y="-420" width="44" height="34" rx="6" fill="#4a5a28" stroke="{OUT}" stroke-width="4"/>
- <rect x="22" y="-420" width="44" height="34" rx="6" fill="#4a5a28" stroke="{OUT}" stroke-width="4"/>
+ <rect x="-86" y="-462" width="172" height="38" rx="8" fill="#1c1410" stroke="#E8E4DA" stroke-width="2"/>
+ <text x="0" y="-435" font-family="Oswald, Osw" font-weight="700" font-size="17" text-anchor="middle" fill="#E8E4DA">@amanha<tspan fill="#5CE1E6">voce</tspan><tspan fill="#D7263D">decide</tspan></text>
+ <rect x="-66" y="-404" width="44" height="30" rx="6" fill="#4a5a28" stroke="{OUT}" stroke-width="4"/>
+ <rect x="22" y="-404" width="44" height="30" rx="6" fill="#4a5a28" stroke="{OUT}" stroke-width="4"/>
  <path d="M-84 -336 L84 -336" stroke="#5b3a26" stroke-width="16"/><rect x="-14" y="-346" width="28" height="22" fill="#c9a227" stroke="{OUT}" stroke-width="3"/>
  <g id="{p}-armR"><path d="M92 -560 Q128 -470 122 -360 L88 -356 Q84 -460 60 -540 Z" fill="#4e5d2e" stroke="{OUT}" stroke-width="5"/>
    <g transform="translate(106 -336)">{glove}</g></g>
@@ -50,3 +52,31 @@ def teo(p="teo", expr="neutro", glow=True):
  </g>
 </g>'''
 DEFS='<defs><filter id="blur18" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="18"/></filter></defs>'
+
+
+def teo_back(p="teob"):
+    """Téo de costas: nome do perfil grande nas costas da jaqueta."""
+    curls = "".join(f'<circle cx="{x}" cy="{y}" r="{r}"/>' for x,y,r in [(-70,-760,30),(-40,-795,34),(0,-805,36),(40,-795,34),(72,-760,30),(-82,-725,22),(84,-725,22),(-50,-700,30),(0,-690,34),(50,-700,30),(-20,-760,30),(22,-760,30)])
+    return f'''
+<g id="{p}">
+ <ellipse cx="0" cy="6" rx="130" ry="18" fill="#000" opacity="0.3"/>
+ <g><path d="M-62 -330 L-18 -330 L-22 -60 L-66 -60 Z" fill="#2f3542" stroke="{OUT}" stroke-width="5"/>
+   <path d="M-76 -110 L-14 -110 L-14 4 L-80 4 Z" fill="#5b3a26" stroke="{OUT}" stroke-width="5"/><path d="M-76 -80 L-14 -80" stroke="#D7263D" stroke-width="7"/></g>
+ <g><path d="M18 -330 L62 -330 L66 -60 L22 -60 Z" fill="#2f3542" stroke="{OUT}" stroke-width="5"/>
+   <path d="M14 -110 L76 -110 L80 4 L14 4 Z" fill="#5b3a26" stroke="{OUT}" stroke-width="5"/><path d="M14 -80 L76 -80" stroke="#D7263D" stroke-width="7"/></g>
+ <path d="M-92 -560 Q-128 -470 -122 -360 L-88 -356 Q-84 -460 -60 -540 Z" fill="#4e5d2e" stroke="{OUT}" stroke-width="5"/><circle cx="-106" cy="-342" r="22" fill="#8D5B3E" stroke="{OUT}" stroke-width="5"/>
+ <path d="M92 -560 Q128 -470 122 -360 L88 -356 Q84 -460 60 -540 Z" fill="#4e5d2e" stroke="{OUT}" stroke-width="5"/>
+ <g transform="translate(106 -336)"><path d="M-24 -22 Q-30 18 -6 26 Q22 30 26 6 L22 -26 Z" fill="#5CE1E6" stroke="{OUT}" stroke-width="4"/></g>
+ <path d="M-96 -570 Q0 -606 96 -570 L82 -320 Q0 -300 -82 -320 Z" fill="#556B2F" stroke="{OUT}" stroke-width="5"/>
+ <path d="M-84 -336 L84 -336" stroke="#5b3a26" stroke-width="16"/>
+ <rect x="-80" y="-530" width="160" height="176" rx="10" fill="#1c1410" stroke="#E8E4DA" stroke-width="3"/>
+ <text x="0" y="-484" font-family="Oswald, Osw" font-weight="700" font-size="33" text-anchor="middle" fill="#E8E4DA">@amanha</text>
+ <text x="0" y="-436" font-family="Oswald, Osw" font-weight="700" font-size="40" text-anchor="middle" fill="#5CE1E6">voce</text>
+ <text x="0" y="-388" font-family="Oswald, Osw" font-weight="700" font-size="40" text-anchor="middle" fill="#D7263D">decide</text>
+ <path d="M-30 -610 L30 -610 L26 -568 L-26 -568 Z" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
+ <path d="M-70 -600 Q0 -556 70 -600 L64 -560 Q0 -530 -64 -560 Z" fill="#D7263D" stroke="{OUT}" stroke-width="5"/>
+ <ellipse cx="-80" cy="-690" rx="14" ry="20" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/><ellipse cx="80" cy="-690" rx="14" ry="20" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
+ <path d="M-78 -720 Q-80 -620 0 -606 Q80 -620 78 -720 Q70 -790 0 -792 Q-70 -790 -78 -720 Z" fill="#8D5B3E" stroke="{OUT}" stroke-width="5"/>
+ <path d="M-86 -700 Q-90 -630 0 -618 Q90 -630 86 -700 Q84 -800 0 -812 Q-84 -800 -86 -700 Z" fill="#1c1410" stroke="{OUT}" stroke-width="4"/>
+ <g fill="#1c1410" stroke="#2c221c" stroke-width="3">{curls}</g>
+</g>'''
