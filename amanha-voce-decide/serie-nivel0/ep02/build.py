@@ -131,7 +131,7 @@ for lid, groups in G:
 open("compositions/captions.html", "w").write(f"""<template>
   <style>
     #root {{ position:absolute; inset:0; pointer-events:none; }}
-    .cg {{ position:absolute; left:120px; width:840px; top:1110px; text-align:center; opacity:0; visibility:hidden;
+    .cg {{ position:absolute; left:120px; width:840px; top:1430px; text-align:center; opacity:0; visibility:hidden;
           font-family:'Oswald',sans-serif; font-weight:700; font-size:74px; line-height:1.15; color:#fff;
           text-shadow:0 4px 0 #000, 0 0 18px rgba(0,0,0,0.9); box-sizing:border-box; }}
     .w {{ padding:0 10px; border-radius:6px; }}
