@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Osw;font-weight:700;src:url('file:///root/.cache/hyperframes/fonts/oswald/700-normal-ff1b1b08d7f7.woff2')}
+@font-face{font-family:Osw;font-weight:700;src:url('file:///root/.cache/hyperframes/fonts/oswald/700-normal-e17eb28b244d.woff2')}
+@font-face{font-family:Osw;font-weight:700;src:url('file:///root/.cache/hyperframes/fonts/oswald/700-normal-d2830b7ded73.woff2')}
+@font-face{font-family:Mono;src:url('file:///root/.cache/hyperframes/fonts/space-mono/400-normal-52a78e6369a1.woff2')}
+html,body{margin:0;width:1080px;height:1080px;background:#000}
+#c{position:relative;width:1080px;height:1080px;overflow:hidden;background:radial-gradient(circle at 50% 46%,#1a1b20 0%,#0a0a0c 55%,#000 80%)}
+.ring{position:absolute;left:90px;top:90px;width:888px;height:888px;border-radius:50%;border:6px solid #D7263D;box-sizing:border-box;opacity:.9}
+.A,.B{position:absolute;top:120px;font-family:Osw;font-weight:700;font-size:470px;line-height:1}
+.A{left:275px;color:#E8E4DA}
+.B{left:555px;background:linear-gradient(100deg,#D7263D 10%,#7a0d18 55%,#000 92%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.slash{position:absolute;left:522px;top:185px;width:15px;height:410px;background:#D7263D;transform:rotate(14deg);border-radius:8px;box-shadow:0 0 30px #D7263D88}
+.name{position:absolute;left:0;width:1080px;top:640px;text-align:center;font-family:Osw;font-weight:700;font-size:78px;letter-spacing:.06em;line-height:1.08;color:#E8E4DA}
+.name b{color:#D7263D;font-weight:400}
+.dot{position:absolute;border-radius:50%;background:#E8E4DA}
+</style></head><body><div id="c">
+<div class="ring"></div><div class="A">A</div><div class="B">B</div><div class="slash"></div>
+<div class="name">AMANHÃ<br>VOCÊ <b>DECIDE</b></div>
+</div><script>
+let s=11;const r=()=>{s=(s*16807)%2147483647;return s/2147483647};
+for(let i=0;i<45;i++){const d=document.createElement('div');d.className='dot';const z=2+r()*4;Object.assign(d.style,{left:r()*1080+'px',top:r()*1080+'px',width:z+'px',height:z+'px',opacity:.15+r()*.4});document.getElementById('c').appendChild(d)}
+</script></body></html>

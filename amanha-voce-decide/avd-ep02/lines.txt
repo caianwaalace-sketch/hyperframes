@@ -1,0 +1,10 @@
+l1|Em mil novecentos e quarenta e oito, um homem foi achado morto numa praia da Austrália. Bem vestido. Sem nenhum documento.
+l2|Todas as etiquetas das roupas tinham sido cortadas. Como se alguém quisesse apagar quem ele era.
+l3|Os médicos suspeitaram de veneno. Mas nenhum veneno foi encontrado.
+l4|Num bolso secreto, a polícia achou um papel escrito: Tamám Shud. Em persa: está terminado.
+l5|O papel tinha sido arrancado de um livro de poemas. E no livro, havia um código escrito à mão. Até hoje, ninguém decifrou.
+l6|No livro também tinha o telefone de uma enfermeira. Ela morava perto da praia. E jurou que nunca viu aquele homem.
+l7|Em dois mil e vinte e dois, um teste de DNA revelou o nome dele: Carl Webb.
+l8|Mas por que ele morreu? E o que diz o código? Ninguém sabe.
+l9|Amanhã, você decide. A: o mistério de Elisa Lam, no Hotel Cecil. Ou B: a Mulher de Isdal.
+l10|Comenta A ou B.

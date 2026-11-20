@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Osw;font-weight:700;src:url('file:///root/.cache/hyperframes/fonts/oswald/700-normal-ff1b1b08d7f7.woff2')}
+@font-face{font-family:Osw;font-weight:700;src:url('file:///root/.cache/hyperframes/fonts/oswald/700-normal-e17eb28b244d.woff2')}
+@font-face{font-family:Osw;font-weight:700;src:url('file:///root/.cache/hyperframes/fonts/oswald/700-normal-d2830b7ded73.woff2')}
+html,body{margin:0;width:1080px;height:1080px;background:#000}
+#c{position:relative;width:1080px;height:1080px;overflow:hidden;background:radial-gradient(circle at 50% 46%,#1c1d22 0%,#0a0a0c 55%,#000 80%)}
+.ring{position:absolute;left:90px;top:90px;width:888px;height:888px;border-radius:50%;border:6px solid #D7263D;box-sizing:border-box}
+.t{position:absolute;left:0;width:1080px;text-align:center;font-family:Osw;font-weight:700;line-height:1}
+#l1{top:250px;font-size:150px;color:#E8E4DA;letter-spacing:.04em}
+#l2{top:420px;font-size:150px;color:#E8E4DA;letter-spacing:.04em}
+#l3{top:590px;font-size:190px;color:#D7263D;letter-spacing:.03em;text-shadow:0 0 40px #D7263D55}
+.cut{position:absolute;left:300px;top:805px;width:480px;height:10px;border-radius:5px;background:#D7263D;box-shadow:0 0 24px #D7263D99}
+.dot{position:absolute;border-radius:50%;background:#E8E4DA}
+</style></head><body><div id="c">
+<div class="ring"></div>
+<div class="t" id="l1">AMANHÃ</div><div class="t" id="l2">VOCÊ</div><div class="t" id="l3">DECIDE</div>
+<div class="cut"></div>
+</div><script>
+let s=11;const r=()=>{s=(s*16807)%2147483647;return s/2147483647};
+for(let i=0;i<45;i++){const d=document.createElement('div');d.className='dot';const z=2+r()*4;Object.assign(d.style,{left:r()*1080+'px',top:r()*1080+'px',width:z+'px',height:z+'px',opacity:.15+r()*.4});document.getElementById('c').appendChild(d)}
+</script></body></html>
