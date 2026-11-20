@@ -1,0 +1,10 @@
+l1|Neste mundo, todo mundo nasce com um número em cima da cabeça. O nível.
+l2|O do padeiro é doze. O da guarda é trinta. O do Téo é zero.
+l3|Zero. O único da cidade inteira.
+l4|Numa noite, fugindo dos garotos que riam dele, o Téo se escondeu num porão abandonado.
+l5|No escuro, uma luz azul. Uma luva, esquecida numa caixa de madeira.
+l6|Quando ele vestiu a luva, o número em cima da cabeça dele começou a piscar.
+l7|Zero. Um. Zero. Noventa e nove.
+l8|E alguém, lá em cima da escada, chamou o nome dele.
+l9|Amanhã, você decide. A: o Téo se esconde. Ou B: o Téo sobe a escada.
+l10|Comenta A ou B.
