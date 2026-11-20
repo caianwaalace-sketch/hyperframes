@@ -1,4 +1,5 @@
 # Personagem fixo "Téo" (SVG). Origem: pés em (0,0), altura ~860.
+from nago import nago_front, nago_back
 OUT="#1a1410"
 def teo(p="teo", expr="neutro", glow=True, level=None, level_color="#D7263D", tag=True):
     EY = {
@@ -15,8 +16,7 @@ def teo(p="teo", expr="neutro", glow=True, level=None, level_color="#D7263D", ta
     faces = "".join(f'<g id="{p}-x-{k}" opacity="{1 if k == expr else 0}"><g id="{p}-eyes-{k}">{EY[k].replace("{o}", OUT)}</g><g stroke="#1c1410" stroke-width="7" fill="none" stroke-linecap="round">{BR[k]}</g>{MO[k]}</g>' for k in EY)
     tagsvg = nametag(-1010 if level is not None else -920) if tag else ""
     lvl = (f'<g id="{p}-lvl"><rect x="-70" y="-930" width="140" height="84" rx="16" fill="#111318" stroke="{level_color}" stroke-width="5"/><text id="{p}-lvlt" x="0" y="-870" font-family="Oswald, Osw" font-weight="700" font-size="60" text-anchor="middle" fill="{level_color}">{level}</text></g>' if level is not None else "")
-    braids_back = braids(side=True)
-    scalp = SCALP
+    scalp = nago_front()
     glove = ('<g id="%s-glow"><circle cx="0" cy="0" r="52" fill="#5CE1E6" opacity="0.35" filter="url(#blur18)"/></g>' % p if glow else "") + \
             f'<path d="M-24 -22 Q-30 18 -6 26 Q22 30 26 6 L22 -26 Z" fill="#5CE1E6" stroke="{OUT}" stroke-width="4"/><path d="M-14 -8 L12 -10 M-12 6 L14 4" stroke="#1e8a96" stroke-width="4"/>'
     return f'''
@@ -45,7 +45,6 @@ def teo(p="teo", expr="neutro", glow=True, level=None, level_color="#D7263D", ta
    <path d="M116 -462 Q124 -420 122 -360 L88 -356 Q86 -420 86 -460 Z" fill="#8D5B3E" stroke="{OUT}" stroke-width="5"/>
    <g transform="translate(106 -336)">{glove}</g></g>
  <g id="{p}-head">
-  {braids_back}
   <path d="M-30 -610 L30 -610 L26 -568 L-26 -568 Z" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
   <ellipse cx="-80" cy="-690" rx="14" ry="20" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
   <ellipse cx="80" cy="-690" rx="14" ry="20" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
@@ -87,7 +86,6 @@ DEFS='<defs><filter id="blur18" x="-100%" y="-100%" width="300%" height="300%"><
 
 def teo_back(p="teob"):
     """Téo de costas: polo, tranças brancas caindo nas costas, @ em cima da cabeça."""
-    back_braids = "".join(braid(x, -780 + abs(x) * 0.3, 14 + (3 if abs(x) < 50 else 0), x / 200) for x in range(-84, 90, 21))
     return f'''
 <g id="{p}">
  <ellipse cx="0" cy="6" rx="130" ry="18" fill="#000" opacity="0.3"/>
@@ -106,7 +104,6 @@ def teo_back(p="teob"):
  <path d="M-30 -610 L30 -610 L26 -580 L-26 -580 Z" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
  <ellipse cx="-80" cy="-690" rx="14" ry="20" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/><ellipse cx="80" cy="-690" rx="14" ry="20" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
  <path d="M-78 -720 Q-80 -620 0 -606 Q80 -620 78 -720 Q70 -790 0 -792 Q-70 -790 -78 -720 Z" fill="#8D5B3E" stroke="{OUT}" stroke-width="5"/>
- <path d="M-82 -700 Q-84 -800 0 -812 Q84 -800 82 -700 Q60 -660 0 -654 Q-60 -660 -82 -700 Z" fill="{HAIR}" stroke="{OUT}" stroke-width="4"/>
- {back_braids}
+ {nago_back()}
  <g id="{p}-tag">{nametag(-920)}</g>
 </g>'''
