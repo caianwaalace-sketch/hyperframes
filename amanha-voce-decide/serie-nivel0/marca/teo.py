@@ -1,17 +1,20 @@
 # Personagem fixo "Téo" (SVG). Origem: pés em (0,0), altura ~860.
 OUT="#1a1410"
-def teo(p="teo", expr="neutro", glow=True):
-    eyes = {
+def teo(p="teo", expr="neutro", glow=True, level=None, level_color="#D7263D", tag=True):
+    EY = {
      "neutro": '<ellipse cx="-34" cy="-700" rx="15" ry="17" fill="#fff" stroke="{o}" stroke-width="4"/><ellipse cx="34" cy="-700" rx="15" ry="17" fill="#fff" stroke="{o}" stroke-width="4"/><circle cx="-31" cy="-697" r="8" fill="#2a1a10"/><circle cx="37" cy="-697" r="8" fill="#2a1a10"/><circle cx="-28" cy="-701" r="3" fill="#fff"/><circle cx="40" cy="-701" r="3" fill="#fff"/>',
      "medo": '<ellipse cx="-34" cy="-702" rx="17" ry="21" fill="#fff" stroke="{o}" stroke-width="4"/><ellipse cx="34" cy="-702" rx="17" ry="21" fill="#fff" stroke="{o}" stroke-width="4"/><circle cx="-34" cy="-700" r="5" fill="#2a1a10"/><circle cx="34" cy="-700" r="5" fill="#2a1a10"/>',
      "decidido": '<path d="M-50 -704 Q-34 -712 -18 -704 L-18 -696 Q-34 -690 -50 -696 Z" fill="#fff" stroke="{o}" stroke-width="4"/><path d="M18 -704 Q34 -712 50 -704 L50 -696 Q34 -690 18 -696 Z" fill="#fff" stroke="{o}" stroke-width="4"/><circle cx="-32" cy="-700" r="6" fill="#2a1a10"/><circle cx="36" cy="-700" r="6" fill="#2a1a10"/>',
-    }[expr].replace("{o}", OUT)
-    brows = {"neutro":'<path d="M-52 -728 Q-34 -738 -16 -730" /><path d="M16 -730 Q34 -738 52 -728" />',
+    }
+    BR = {"neutro":'<path d="M-52 -728 Q-34 -738 -16 -730" /><path d="M16 -730 Q34 -738 52 -728" />',
              "medo":'<path d="M-52 -738 Q-36 -750 -18 -742" /><path d="M18 -742 Q36 -750 52 -738" />',
-             "decidido":'<path d="M-54 -726 L-16 -716" /><path d="M16 -716 L54 -726" />'}[expr]
-    mouth = {"neutro":'<path d="M-14 -640 Q0 -634 14 -640" stroke="#3a1f12" stroke-width="5" fill="none" stroke-linecap="round"/>',
+             "decidido":'<path d="M-54 -726 L-16 -716" /><path d="M16 -716 L54 -726" />'}
+    MO = {"neutro":'<path d="M-14 -640 Q0 -634 14 -640" stroke="#3a1f12" stroke-width="5" fill="none" stroke-linecap="round"/>',
              "medo":'<ellipse cx="0" cy="-638" rx="12" ry="15" fill="#3a1f12"/>',
-             "decidido":'<path d="M-16 -638 L16 -642" stroke="#3a1f12" stroke-width="5" fill="none" stroke-linecap="round"/>'}[expr]
+             "decidido":'<path d="M-16 -638 L16 -642" stroke="#3a1f12" stroke-width="5" fill="none" stroke-linecap="round"/>'}
+    faces = "".join(f'<g id="{p}-x-{k}" opacity="{1 if k == expr else 0}"><g id="{p}-eyes-{k}">{EY[k].replace("{o}", OUT)}</g><g stroke="#1c1410" stroke-width="7" fill="none" stroke-linecap="round">{BR[k]}</g>{MO[k]}</g>' for k in EY)
+    tagsvg = nametag(-1010 if level is not None else -920) if tag else ""
+    lvl = (f'<g id="{p}-lvl"><rect x="-70" y="-930" width="140" height="84" rx="16" fill="#111318" stroke="{level_color}" stroke-width="5"/><text id="{p}-lvlt" x="0" y="-870" font-family="Oswald, Osw" font-weight="700" font-size="60" text-anchor="middle" fill="{level_color}">{level}</text></g>' if level is not None else "")
     curls = "".join(f'<circle cx="{x}" cy="{y}" r="{r}"/>' for x,y,r in [(-70,-760,30),(-40,-795,34),(0,-805,36),(40,-795,34),(72,-760,30),(-82,-725,22),(84,-725,22),(-20,-780,26),(22,-782,26)])
     glove = ('<g id="%s-glow"><circle cx="0" cy="0" r="52" fill="#5CE1E6" opacity="0.35" filter="url(#blur18)"/></g>' % p if glow else "") + \
             f'<path d="M-24 -22 Q-30 18 -6 26 Q22 30 26 6 L22 -26 Z" fill="#5CE1E6" stroke="{OUT}" stroke-width="4"/><path d="M-14 -8 L12 -10 M-12 6 L14 4" stroke="#1e8a96" stroke-width="4"/>'
@@ -44,13 +47,18 @@ def teo(p="teo", expr="neutro", glow=True):
   <ellipse cx="80" cy="-690" rx="14" ry="20" fill="#7a4d33" stroke="{OUT}" stroke-width="5"/>
   <path d="M-78 -720 Q-80 -620 0 -606 Q80 -620 78 -720 Q70 -790 0 -792 Q-70 -790 -78 -720 Z" fill="#8D5B3E" stroke="{OUT}" stroke-width="5"/>
   <g fill="#1c1410" stroke="{OUT}" stroke-width="3">{curls}</g>
-  <g id="{p}-eyes">{eyes}</g>
-  <g stroke="#1c1410" stroke-width="7" fill="none" stroke-linecap="round">{brows}</g>
+  {faces}
   <path d="M-4 -690 Q-10 -664 2 -662" stroke="#5e3a26" stroke-width="5" fill="none" stroke-linecap="round"/>
-  {mouth}
   <path d="M-58 -660 L-44 -656 M44 -656 L58 -660" stroke="#6e4229" stroke-width="3" opacity="0.6"/>
  </g>
+ {lvl}
+ <g id="{p}-tag">{tagsvg}</g>
 </g>'''
+def nametag(y):
+    return (f'<rect x="-150" y="{y}" width="300" height="50" rx="25" fill="#111318" fill-opacity="0.85" stroke="#E8E4DA" stroke-width="3"/>'
+            f'<text x="0" y="{y + 36}" font-family="Oswald, Osw" font-weight="700" font-size="30" text-anchor="middle" fill="#E8E4DA">@amanha<tspan fill="#5CE1E6">voce</tspan><tspan fill="#D7263D">decide</tspan></text>')
+
+
 DEFS='<defs><filter id="blur18" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="18"/></filter></defs>'
 
 
@@ -79,4 +87,5 @@ def teo_back(p="teob"):
  <path d="M-78 -720 Q-80 -620 0 -606 Q80 -620 78 -720 Q70 -790 0 -792 Q-70 -790 -78 -720 Z" fill="#8D5B3E" stroke="{OUT}" stroke-width="5"/>
  <path d="M-86 -700 Q-90 -630 0 -618 Q90 -630 86 -700 Q84 -800 0 -812 Q-84 -800 -86 -700 Z" fill="#1c1410" stroke="{OUT}" stroke-width="4"/>
  <g fill="#1c1410" stroke="#2c221c" stroke-width="3">{curls}</g>
+ <g id="{p}-tag">{nametag(-920)}</g>
 </g>'''
