@@ -33,3 +33,20 @@
 - [ ] Legenda: resumo em 2 linhas + A/B + "Me segue e curte pra parte X+1"
 - [ ] Comentário fixado com a votação
 - [ ] TikTok: mesmo vídeo, legenda curta
+
+## Dados reais (Instagram, primeiras 24 h, 20/11/2026)
+
+| Vídeo | Duração | Views | Alcance | Pularam no início | Tempo médio assistido | Curtidas | Coment. | Envios |
+|---|---|---|---|---|---|---|---|---|
+| Nível 0 EP.01 | 46 s | 494 | 217 | **17,8 %** (melhor) | 15,8 s (34 %) | 17 | 4 | 0 |
+| Você Sabia #01 | 46 s | **682** | **525** | 33,3 % | 9,3 s (20 %) | 17 | 2 | **4** |
+| Homem de Somerton | 60 s | 154 | 122 | 31,1 % | **27,0 s (45 %)** | 2 | 0 | 2 |
+| Passo Dyatlov | 60 s | 186 | 158 | 44,8 % (pior) | 14,6 s (24 %) | 10 | 2 | 0 |
+
+Conclusões:
+- **Nível 0 tem o melhor gancho** (só 18 % pulam) e o melhor engajamento por view. É o formato principal.
+- **Saúde é o que mais chega a gente nova** (maior alcance) e é o mais compartilhado, mas segura pouco: encurtar para ~30 s.
+- **Terror segura quem fica** (Somerton 45 % assistido), mas o gancho do Dyatlov perdeu 45 % no começo.
+- **Ninguém chega no fim**: em média as pessoas saem antes dos 16 s, e a pergunta A/B está depois dos 35 s. Ação: anunciar a escolha nos primeiros 3 s ("no final, VOCÊ decide…"), colocar a pergunta mais cedo e encurtar os vídeos.
+
+Votos: Nível 0 → **B (sobe a escada)** 2×1. Saúde → **B (celular antes de dormir)** 1×0.
