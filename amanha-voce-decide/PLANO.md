@@ -50,3 +50,12 @@ Conclusões:
 - **Ninguém chega no fim**: em média as pessoas saem antes dos 16 s, e a pergunta A/B está depois dos 35 s. Ação: anunciar a escolha nos primeiros 3 s ("no final, VOCÊ decide…"), colocar a pergunta mais cedo e encurtar os vídeos.
 
 Votos: Nível 0 → **B (sobe a escada)** 2×1. Saúde → **B (celular antes de dormir)** 1×0.
+
+## Nível 0 virou duas continuidades (a partir do EP.03, 21/11/2026)
+
+O EP.02 terminou empatado entre plataformas: no TikTok o público comentou **A (foge com a menina)**, no Instagram comentou **B (enfrenta os caçadores)**. Em vez de descartar um dos dois lados, a série virou duas linhas paralelas — mesmo Téo, mesma Lia, mesmo ponto de partida, histórias diferentes dali pra frente:
+
+- **Instagram (@amanhavocedecide)** segue o ramo **B**: `serie-nivel0/ep03-insta/` → `posts/nivel0-ep03-insta.mp4`. Téo enfrenta os caçadores, a Lia se machuca protegendo ele, e o confronto vira ao vivo pra cidade inteira ver. Esse é o ramo "oficial" do Instagram, postado direto (autorização permanente já concedida).
+- **TikTok** segue o ramo **A**: `serie-nivel0/ep03-tiktok/` → `posts/nivel0-ep03-tiktok.mp4`. Téo e a menina fogem pela estrada até Pindamonhangaba e Lorena, onde os caçadores bloqueiam a pista. Esse vídeo é entregue pronto pro usuário postar manualmente (o conector do TikTok aqui é só leitura).
+
+**Ao planejar o EP.04 em diante**: checar de qual pasta/ramo (ep0X-insta vs ep0X-tiktok) o próximo episódio continua, porque agora cada plataforma tem sua própria votação e seu próprio próximo capítulo. Não assumir que as duas seguem a mesma história.
