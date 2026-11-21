@@ -165,7 +165,6 @@ scene("s10", CSS + """
       <svg class="fig" data-layout-ignore viewBox="0 0 1080 1920">{DEFS}<g id="s10-z"><g transform="translate(540 2820) scale(2.4)">{teo("t10", "decidido", glow=True, level="99", level_color="#5CE1E6")}</g></g></svg>
 """, tint("s10", ["#2E9BFF", "#1d3557", "#5CE1E6"], 4.4) + """
     tl.fromTo("#t10-glow", { scale: 1, opacity: 0.4, transformOrigin: "50% 50%" }, { scale: 2.2, opacity: 1, duration: 0.5, ease: "power2.out" }, @l10:4@);
-    tl.to("#t10-x-decidido", { opacity: 0, duration: 0.1 }, @l10:8@);
     tl.fromTo(".t10-pw", { opacity: 0 }, { opacity: 1, duration: 0.15, immediateRender: false }, @l10:8@);
 """)
 
@@ -211,7 +210,7 @@ scene("s13", CSS + """
     .s13-let { position:absolute; left:0; top:0; width:170px; height:252px; background:#D7263D; color:#fff; font-size:170px; font-weight:700; text-align:center; line-height:252px; }
     .s13-txt { position:absolute; left:200px; top:36px; width:590px; }
     .s13-txt b { display:block; font-size:50px; line-height:1.1; }
-    .s13-txt span { display:block; margin-top:14px; font-size:26px; color:#8FA3B0; }
+    .s13-txt span { display:block; margin-top:14px; font-size:30px; color:#8FA3B0; }
     #s13-bar { position:absolute; left:130px; top:1100px; width:820px; height:8px; background:#D7263D; transform-origin:0 50%; }
 """, f"""
       {layers("s13", highway("s13-bg"))}

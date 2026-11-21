@@ -108,7 +108,7 @@ for lid, groups in G:
             b = round(WS[k][1] - 0.04, 3)
         else:
             b = round(min(gw[-1][2] + 0.35, nxt_line - 0.04), 3)
-        if lid == lids[-1]:
+        if lid == lids[-1] and gix == len(groups) - 1:
             b = TOTAL
         words = disp.split()
         spans = "".join(f'<span class="w" id="c{gi}w{j}">{w}</span> ' for j, w in enumerate(words))
