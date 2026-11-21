@@ -70,7 +70,7 @@ open("compositions/atmos.html", "w").write(f"""<template>
     #root {{ position:absolute; inset:0; pointer-events:none; overflow:hidden; }}
     .flake {{ position:absolute; border-radius:50%; background:#E8E4DA; }}
     #at-vig {{ position:absolute; inset:0; background:radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.75) 100%); }}
-    #at-badge {{ position:absolute; left:140px; width:800px; top:262px; text-align:center; font-family:'Space Mono',monospace; font-size:28px; letter-spacing:0.3em; color:#D7263D; }}
+    #at-badge {{ position:absolute; left:140px; width:800px; top:110px; text-align:center; font-family:'Space Mono',monospace; font-size:28px; letter-spacing:0.3em; color:#D7263D; text-shadow:0 2px 6px rgba(0,0,0,0.9); }}
   </style>
   <div id="root" data-composition-id="atmos" data-width="{W}" data-height="{H}">
     {''.join(flakes)}

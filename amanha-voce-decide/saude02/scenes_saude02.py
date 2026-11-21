@@ -136,7 +136,7 @@ scene("s6", CSS + """
 
 # ---------- S7: ansiedade ----------
 scene("s7", CSS + """
-    #s7-k { top:1020px; font-size:72px; font-weight:700; color:#D7263D; }
+    #s7-k { top:1020px; font-size:72px; font-weight:700; color:#fff; -webkit-text-stroke:3px #D7263D; }
 """, f"""
       {layers("s7", bedroom("s7-bg"))}
       <svg class="fig" data-layout-ignore viewBox="0 0 1080 1920">{DEFS}
