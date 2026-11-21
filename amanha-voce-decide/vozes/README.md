@@ -1,11 +1,16 @@
 # Vozes para narração (Caian Studio)
 
+## Voz padrão atual: **Piper** (escolhida pelo usuário em 21/11/2026)
+
+Todo vídeo novo usa `piper_voice.py` com a voz `pt_BR-faber-medium`, a não ser que o
+usuário peça outra coisa (ex.: recarregar o ElevenLabs e voltar pra ele).
+
 ## Local e grátis (sempre disponíveis, rodam neste ambiente de nuvem)
 
 | Motor | Script | Voz usada | Observação |
 |---|---|---|---|
-| **Kokoro** | `voice.py` (via `hyperframes tts --voice pm_alex --lang pt-br`) | `pm_alex` (prefixo "p" = português) | Já era o usado nos vídeos antes do ElevenLabs. |
-| **Piper** | `piper_voice.py` | `pt_BR-faber-medium` | Voz nativa em português brasileiro, instalada em 21/11/2026. Modelo baixado de huggingface.co (único lugar onde existe), salvo no setup_script do ambiente pra sobreviver a reinícios. |
+| **Piper** ⭐ padrão | `piper_voice.py` | `pt_BR-faber-medium` | Voz nativa em português brasileiro, instalada em 21/11/2026. Modelo baixado de huggingface.co (único lugar onde existe), salvo no setup_script do ambiente pra sobreviver a reinícios. |
+| Kokoro (reserva) | `voice.py` (via `hyperframes tts --voice pm_alex --lang pt-br`) | `pm_alex` (prefixo "p" = português) | Usado nos vídeos antes do Piper. Mantido como alternativa se o Piper falhar. |
 
 Nenhum dos dois motores locais devolve o tempo exato de cada palavra (como o ElevenLabs dava).
 `piper_voice.py` e a função `estimate_timing` em `voice.py`/`timing.py` estimam esse tempo pelo
