@@ -51,11 +51,21 @@ Conclusões:
 
 Votos: Nível 0 → **B (sobe a escada)** 2×1. Saúde → **B (celular antes de dormir)** 1×0.
 
-## Nível 0 virou duas continuidades (a partir do EP.03, 21/11/2026)
+## Nível 0: correção sobre as "duas continuidades" (22-23/11/2026)
 
-O EP.02 terminou empatado entre plataformas: no TikTok o público comentou **A (foge com a menina)**, no Instagram comentou **B (enfrenta os caçadores)**. Em vez de descartar um dos dois lados, a série virou duas linhas paralelas — mesmo Téo, mesma Lia, mesmo ponto de partida, histórias diferentes dali pra frente:
+A ideia de dividir a série em duas linhas paralelas (Instagram = ramo B/enfrenta, TikTok = ramo A/foge, ver histórico abaixo) **não é o que de fato ficou no ar**. O que aconteceu na prática:
 
-- **Instagram (@amanhavocedecide)** segue o ramo **B**: `serie-nivel0/ep03-insta/` → `posts/nivel0-ep03-insta.mp4`. Téo enfrenta os caçadores, a Lia se machuca protegendo ele, e o confronto vira ao vivo pra cidade inteira ver. Esse é o ramo "oficial" do Instagram, postado direto (autorização permanente já concedida).
-- **TikTok** segue o ramo **A**: `serie-nivel0/ep03-tiktok/` → `posts/nivel0-ep03-tiktok.mp4`. Téo e a menina fogem pela estrada até Pindamonhangaba e Lorena, onde os caçadores bloqueiam a pista. Esse vídeo é entregue pronto pro usuário postar manualmente (o conector do TikTok aqui é só leitura).
+- O EP.03 "A estrada" (ramo A, foge — o mesmo vídeo preparado pra TikTok) acabou indo ao ar no Instagram também, com sua própria votação (`serie-nivel0/ep03-tiktok/`).
+- Separadamente, o EP.03 "Enfrenta os caçadores" (ramo B, `serie-nivel0/ep03-insta/`) nunca foi postado como episódio próprio, mas o **EP.04 "A Confraria"** que continuava dele (`serie-nivel0/ep04-insta/`) foi postado mesmo assim — criando duas histórias "EP.0X" conflitantes ao mesmo tempo no feed.
+- **Resolução do usuário (23/11/2026): "A Confraria" é o ramo oficial único daqui pra frente.** O ramo "A estrada" (e qualquer EP.04 que continuasse dele, como o que ia se chamar "apaga a luva") foi abandonado — os arquivos ficam no repositório como histórico mas não são mais canônicos. TikTok não teve uma segunda linha própria: quem posta lá usa os mesmos vídeos do Instagram, manualmente (o conector daqui é só leitura).
 
-**Ao planejar o EP.04 em diante**: checar de qual pasta/ramo (ep0X-insta vs ep0X-tiktok) o próximo episódio continua, porque agora cada plataforma tem sua própria votação e seu próprio próximo capítulo. Não assumir que as duas seguem a mesma história.
+**Continuidade real, em ordem**: EP.01 → EP.02 → (EP.03 nunca postado como episódio próprio) → EP.04 "A Confraria" (`ep04-insta/`) → **EP.05** (`ep05/`, 23/11/2026): Téo e Lia entram no armazém (ramo A venceu), acham uma parede inteira de luvas com etiquetas de donos antigos, e descobrem que quem está por trás da Confraria é um homem que se parece com o Téo, mais velho — "eu fui o primeiro dono dessa luva, e ela sempre volta pra família". Luva esquenta, olhos azuis, ele exige a luva de volta. Gancho do EP.06: A) o Téo entrega a luva pra ouvir a verdade inteira, ou B) ele luta pra proteger o que é dele.
+
+**Lição pra não repetir**: antes de produzir o próximo episódio, sempre conferir no Instagram (comentários reais, não só o cache do Windsor) qual foi o episódio que realmente foi ao ar por último e qual gancho ele deixou — não assumir pelo que foi *planejado* produzir.
+
+## Estilo de abertura: sem recap (a partir do EP.05, 23/11/2026)
+
+Os primeiros 1-3s decidem se o Reels ganha alcance, e um recap ("No episódio anterior...") gasta esse tempo com contexto em vez de gancho. **A partir do EP.05, nenhum episódio abre recapitulando.** A primeira fala cai direto na ação/tensão do momento presente; o resultado da votação anterior (quando precisa aparecer) vem na segunda linha, rápido, não na abertura.
+
+- Antes (EP.01-EP.04): `l1|No episódio anterior, [recapitula o final do episódio passado]... No final, você decide de novo.`
+- Agora (EP.05 em diante): `l1|A porta enferrujada do armazém range ao abrir. Lá dentro, só as luzes piscando guiam os dois.` — e só na l2 vem o "Vocês escolheram A."
