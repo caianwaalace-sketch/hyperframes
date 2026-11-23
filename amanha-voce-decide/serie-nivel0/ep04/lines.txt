@@ -1,0 +1,14 @@
+l1|A caminhonete bate no chão de novo. Os olhos do Téo voltam ao castanho, a luva apaga, e os três caçadores fecham o círculo.
+l2|Vocês escolheram B. O Téo escondeu o poder e deixou os caçadores alcançarem eles.
+l3|O caçador mais alto levanta a mão. Última chance, nível zero. Entrega a luva.
+l4|A menina se põe na frente do Téo. Ele nem sabe usar isso direito. Deixa ele em paz.
+l5|O caçador ri atrás da sombra. A gente não decide quem usa. Só cumpre ordem.
+l6|O Téo pergunta: ordem de quem?
+l7|O caçador levanta o pulso. Uma marca riscada, queimada na pele. Isso não é da sua conta.
+l8|A menina trava o olhar na marca. O rosto dela fica pálido.
+l9|Ela sussurra pro Téo: se essa marca é real, não são só caçadores atrás de você.
+l10|Atrás do caçador, duas luzes aparecem na curva da estrada. Bem mais devagar. Bem mais quietas.
+l11|Não parece carro de caçador. Esse tipo de gente não precisa de farol.
+l12|A menina puxa o braço do Téo com força. Esse carro não é deles. Pode ser coisa pior.
+l13|Amanhã, você decide. A: o Téo entrega a luva pros caçadores, pra ganhar tempo. Ou B: ele foge pro mato antes do carro chegar.
+l14|Comenta A ou B. E me segue pra não perder a parte cinco!
